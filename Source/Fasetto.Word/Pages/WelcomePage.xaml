@@ -8,11 +8,56 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="WelcomePage">
 
-    <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-            <StackPanel>
-                
-            </StackPanel>
-        </ScrollViewer>
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition />
+
+            <ColumnDefinition />
+
+            <ColumnDefinition /> 
+
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition />
+
+                <ColumnDefinition />
+
+                <ColumnDefinition />
+
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="1" Name="Top" Style="{StaticResource WindowControlButton}">
+                <Image Source="/Images/Logo/Material Icons_e3c6(0).ico"/>
+            </Button>
+
+        </Grid>
+        
+
+        <Button Grid.Column="1" Name="_bottomButton" Style="{StaticResource WindowControlButton}">
+            <Image Source="/Images/Logo/fake.jpg"/>
+        </Button>
+
+        <Grid Grid.Column="2" Margin="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition />
+
+                <ColumnDefinition />
+
+                <ColumnDefinition />
+
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="1" Name="test" Style="{StaticResource WindowControlButton}">
+                <Image Source="/Images/Logo/Material Icons_e3c6(0).ico"/>
+            </Button>
+
+        </Grid>
     </Grid>
 </Page>
