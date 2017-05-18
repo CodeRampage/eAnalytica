@@ -17,10 +17,10 @@
         <Grid>
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" TextBlock.TextAlignment="Center">
-                    <Border Background="{StaticResource ForegroundLightBrush}" CornerRadius="10" Padding="15 50 15 15" Width="200" Margin="50 50 50 0">
+                    <Border Background="{StaticResource ForegroundLightBrush}" CornerRadius="10" Padding="2 20 2 20" Width="170" Margin="10 10 10 0">
                         <StackPanel>
                             <TextBlock Text="Login" FontSize="{StaticResource FontSizeLarge}" FontFamily="{StaticResource LatoRegular}" Foreground="{StaticResource WordBlueBrush}"/>
-                            <TextBlock Text="Type in your credentials to continue" FontSize="{StaticResource FontSizeRegular}" Foreground="{StaticResource ForegroundDarkBrush}"/>
+                            <TextBlock Text="please fill in info bellow.." FontSize="{StaticResource FontSizeSmall}" Foreground="{StaticResource ForegroundDarkBrush}"/>
                             <TextBox/>
                             <TextBox/>
                             <Button Content="sign in" HorizontalAlignment="Center" />
