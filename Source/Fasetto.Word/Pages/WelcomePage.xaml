@@ -19,44 +19,39 @@
 
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.Column="0" Margin="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid Grid.Column="0" Margin="80" VerticalAlignment="Center" HorizontalAlignment="Center">
 
-            <Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
-                <ColumnDefinition />
-
-                <ColumnDefinition />
-
-                <ColumnDefinition />
-
-            </Grid.ColumnDefinitions>
-
-            <Button Grid.Column="1" Name="Top" Style="{StaticResource WindowControlButton}">
-                <Image Source="/Images/Logo/Material Icons_e3c6(0).ico"/>
+            <Button Grid.Column="0" Name="Top" Style="{StaticResource WindowControlButton}">
+                <Image Source="/Images/Logo/BI Analytics.png"/>
             </Button>
+
+            <TextBlock Grid.Row="1" Text="Business Intelligence" FontSize="{StaticResource FontSizeSmall}" FontFamily="{StaticResource LatoRegular}" Foreground="{StaticResource WordBlueBrush}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
         </Grid>
         
 
-        <Button Grid.Column="1" Name="_bottomButton" Style="{StaticResource WindowControlButton}">
-            <Image Source="/Images/Logo/icomoon_e637(0).ico"/>
+        <Button Grid.Column="1" Margin="0 5 0 90" Name="_bottomButton" Style="{StaticResource WindowControlButton}">
+            <Image Source="/Images/Logo/BlueDogsLogo.png"/>            
         </Button>
+        
 
-        <Grid Grid.Column="2" Margin="15" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid Grid.Column="2" Margin="80" VerticalAlignment="Center" HorizontalAlignment="Center">
 
-            <Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
-                <ColumnDefinition />
-
-                <ColumnDefinition />
-
-                <ColumnDefinition />
-
-            </Grid.ColumnDefinitions>
-
-            <Button Grid.Column="1" Name="test" Style="{StaticResource WindowControlButton}">
-                <Image Source="/Images/Logo/Material Icons_e3c6(0).ico"/>
+            <Button Grid.Row="0" Name="test" Style="{StaticResource WindowControlButton}">
+                <Image Source="/Images/Logo/Browser.png"/>
             </Button>
+
+            <TextBlock Grid.Row="1" Text="Data Browser" FontSize="{StaticResource FontSizeSmall}" FontFamily="{StaticResource LatoRegular}" Foreground="{StaticResource WordBlueBrush}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
         </Grid>
     </Grid>

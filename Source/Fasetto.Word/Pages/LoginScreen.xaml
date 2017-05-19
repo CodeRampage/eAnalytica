@@ -12,17 +12,16 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-
-        
+         
         <Grid>
-            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-57,0,57">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" TextBlock.TextAlignment="Center">
-                    <Border Background="{StaticResource ForegroundLightBrush}" CornerRadius="10" Padding="2 20 2 20" Width="170" Margin="10 10 10 0">
+                    <Border Background="{StaticResource ForegroundLightBrush}" CornerRadius="10" Padding="2 20 2 20" Width="300" Margin="10 10 10 0">
                         <StackPanel>
-                            <TextBlock Text="Login" FontSize="{StaticResource FontSizeLarge}" FontFamily="{StaticResource LatoRegular}" Foreground="{StaticResource WordBlueBrush}"/>
-                            <TextBlock Text="please fill in info bellow.." FontSize="{StaticResource FontSizeSmall}" Foreground="{StaticResource ForegroundDarkBrush}"/>
-                            <TextBox/>
-                            <TextBox/>
+                            <TextBlock Text="Login" FontSize="{StaticResource FontSizeLarge}" FontFamily="{StaticResource LatoRegular}" Foreground="{StaticResource WordBlueBrush}" Margin="0 0 0 5"/>
+                            <TextBlock Text="please fill in info bellow to login" FontSize="{StaticResource FontSizeSmall}" Foreground="{StaticResource ForegroundDarkBrush}" Margin="0 0 0 15"/>
+                            <TextBox Tag="Email"/>
+                            <TextBox Tag="Password" Margin="0 0 0 20"/>
                             <Button Content="sign in" HorizontalAlignment="Center" />
                         </StackPanel>
                     </Border>
@@ -30,6 +29,6 @@
                 </StackPanel>
             </ScrollViewer>
         </Grid>
-        
-    </Grid>    
+
+    </Grid>
 </Page>

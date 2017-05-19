@@ -9,7 +9,7 @@
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         x:Name="AppWindow"
-        Icon="Images/Logo/icomoon_e637(0).ico"
+        Icon="Images/Logo/BlueDogsLogo2.png"
         MinWidth="{Binding WindowMinimumWidth}"
         MinHeight="{Binding WindowMinimumHeight}"
         Title="Emissions Analytica" Height="600" Width="900">
@@ -72,7 +72,7 @@
                                         
                                         <!-- Icon -->
                                         <Button Style="{StaticResource SystemIconButton}" Command="{Binding MenuCommand}">
-                                            <Image Source="/Images/Logo/icomoon_e637(0).ico"/>
+                                            <Image Source="/Images/Logo/BlueDogsLogo2.png"/>
                                         </Button>
                                         
                                         <!-- Title -->
@@ -82,7 +82,7 @@
                                                     <Run Text="E" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="M" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="I" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="S" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="S" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="I" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="O" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="N" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="S" Foreground="{StaticResource WordOrangeBrush}"/><Run Text=" "/><Run Text="A" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="N" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="A" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="L" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="Y" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="T" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="I" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="C" Foreground="{StaticResource WordOrangeBrush}"/><Run Text="A" Foreground="{StaticResource WordOrangeBrush}"/>                                               
                                                 </TextBlock>
 
-                                                <TextBlock Text="By BlueDogs" Foreground="{StaticResource ForegroundDarkBrush}" TextAlignment="Center"/>                                              
+                                                <TextBlock Text="By Blue Dogs" Foreground="{StaticResource ForegroundDarkBrush}" TextAlignment="Center"/>                                              
                                             </StackPanel>
                                         </Viewbox>
                                         

@@ -180,6 +180,20 @@
   <ItemGroup>
     <Resource Include="Images\Logo\fake.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\BlueDogsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\BI Analytics2.png" />
+    <Resource Include="Images\Logo\Browser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\BI Analytics.png" />
+    <Resource Include="Images\Logo\Browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\BlueDogsLogo2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.1.29.2\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.2\build\dotnet\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
