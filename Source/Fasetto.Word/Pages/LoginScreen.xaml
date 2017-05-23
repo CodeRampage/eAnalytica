@@ -21,7 +21,7 @@
                             <TextBlock Text="Login" FontSize="{StaticResource FontSizeLarge}" FontFamily="{StaticResource LatoRegular}" Foreground="{StaticResource WordBlueBrush}" Margin="0 0 0 5"/>
                             <TextBlock Text="please fill in info bellow to login" FontSize="{StaticResource FontSizeSmall}" Foreground="{StaticResource ForegroundDarkBrush}" Margin="0 0 0 15"/>
                             <TextBox Tag="Email"/>
-                            <TextBox Tag="Password" Margin="0 0 0 20"/>
+                            <PasswordBox  Tag="Password" Margin="0 0 0 20"/>
                             <Button Content="sign in" HorizontalAlignment="Center" />
                         </StackPanel>
                     </Border>
