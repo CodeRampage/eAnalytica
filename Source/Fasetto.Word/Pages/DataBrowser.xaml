@@ -9,7 +9,7 @@
       Title="DataBrowser">
 
     <Grid Margin="15 15 15 15" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Grid.RowDefinitions>            
+        <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -25,7 +25,7 @@
                 <ColumnDefinition />
 
                 <ColumnDefinition />
-                
+
                 <ColumnDefinition />
 
                 <ColumnDefinition />
@@ -40,10 +40,43 @@
                 </Grid.RowDefinitions>
 
                 <Grid Grid.Row="0">
-                    <ComboBox  ItemsSource="{Binding Path=PhoneBookEntry}" 
-                    DisplayMemberPath="Name" 
-                    SelectedValuePath="Name" 
-                    SelectedValue="{Binding Path=PhoneBookEntry}" Width="150" Height="20"/>
+                    <ComboBox
+                        DisplayMemberPath="Name"
+                        SelectedValuePath="Name" 
+                        SelectedValue="Item1" Width="150" Height="20">
+
+                        <ComboBoxItem Name="Item1" Content="01" />
+                        <ComboBoxItem Name="Item2" Content="02" />
+                        <ComboBoxItem Name="Item3" Content="03" />
+                        <ComboBoxItem Name="Item4" Content="04" />
+                        <ComboBoxItem Name="Item5" Content="05" />
+                        <ComboBoxItem Name="Item6" Content="06" />
+                        <ComboBoxItem Name="Item7" Content="07" />
+                        <ComboBoxItem Name="Item8" Content="08" />
+                        <ComboBoxItem Name="Item9" Content="09" />
+                        <ComboBoxItem Name="Item10" Content="10" />
+                        <ComboBoxItem Name="Item11" Content="11" />
+                        <ComboBoxItem Name="Item12" Content="12" />
+                        <ComboBoxItem Name="Item13" Content="13" />
+                        <ComboBoxItem Name="Item14" Content="14" />
+                        <ComboBoxItem Name="Item15" Content="15" />                        <ComboBoxItem Name="Item16" Content="07:30" />
+                        <ComboBoxItem Name="Item17" Content="16" />                        <ComboBoxItem Name="Item18" Content="08:30" />
+                        <ComboBoxItem Name="Item19" Content="17" />
+                        <ComboBoxItem Name="Item20" Content="18" />
+                        <ComboBoxItem Name="Item21" Content="19" />
+                        <ComboBoxItem Name="Item22" Content="20" />
+                        <ComboBoxItem Name="Item23" Content="21" />
+                        <ComboBoxItem Name="Item24" Content="22" />
+                        <ComboBoxItem Name="Item25" Content="23" />
+
+                        <ComboBoxItem Name="Item26" Content="24" />                        <ComboBoxItem Name="Item27" Content="13:00" />
+                        <ComboBoxItem Name="Item28" Content="25" />
+                        <ComboBoxItem Name="Item29" Content="26" />
+                        <ComboBoxItem Name="Item30" Content="27" />
+                        <ComboBoxItem Name="Item31" Content="28" />
+                        <ComboBoxItem Name="Item32" Content="29" />
+                        <ComboBoxItem Name="Item33" Content="30" />                                               
+                    </ComboBox>
                 </Grid>
 
                 <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -55,35 +88,81 @@
                     <RadioButton Grid.Column="0" x:Name="RadioButtonProvince" Content="Province"/>
                     <RadioButton Grid.Column="1" x:Name="RadioButtonShopName" Content="Shop name"/>
                 </Grid>
-               
+
             </Grid>
 
             <Grid Grid.Column="1" Margin="5 0 0 0" >
-                <ComboBox  ItemsSource="{Binding Path=dropDownOptions}" 
-                DisplayMemberPath="Name" 
-                SelectedValuePath="Name" 
-                SelectedValue="{Binding Path=PhonebookEntry}" Width="150" Height="20"/>
+                <ComboBox
+                        DisplayMemberPath="Name"
+                        SelectedValuePath="Name" 
+                        SelectedValue="Item1" Width="150" Height="20">
+
+                    <ComboBoxItem Name="item1" Content="Langenhoven Park" />
+                    <ComboBoxItem Name="item2" Content="Siyabuswa" />
+                    <ComboBoxItem Name="item3" Content="Moteti" />
+                    <ComboBoxItem Name="item4" Content="Fourways" />
+                    <ComboBoxItem Name="item5" Content="Rhodesdene" />
+                    <ComboBoxItem Name="item6" Content="Standerton" />
+                    <ComboBoxItem Name="item7" Content="Brackenhurst" />
+                    <ComboBoxItem Name="item8" Content="Willow Crossing" />
+                    <ComboBoxItem Name="item9" Content="Galeshewe" />
+                    <ComboBoxItem Name="item10" Content="Preller Walk" />
+                    <ComboBoxItem Name="item11" Content="Waverley" />
+                    <ComboBoxItem Name="item12" Content="Primrose" />
+                    <ComboBoxItem Name="item13" Content="Hazel Park" />
+                    <ComboBoxItem Name="item14" Content="Yalami " />
+                    <ComboBoxItem Name="item15" Content="Ivory Park" />
+                    <ComboBoxItem Name="item16" Content="Kuruman" />
+                    <ComboBoxItem Name="item17" Content="Oakfields Benoni" />
+                    <ComboBoxItem Name="item18" Content="Northmead" />
+                    <ComboBoxItem Name="item19" Content="Winchester Green" />
+                    <ComboBoxItem Name="item20" Content="Modimolle" />
+                    <ComboBoxItem Name="item21" Content="Darras" />
+                    <ComboBoxItem Name="item22" Content="Ermelo"/>
+                    <ComboBoxItem Name="item23" Content="Fleurdal" />                 
+                </ComboBox>
             </Grid>
 
             <Grid Grid.Column="2" Margin="5 0 0 0" >
-                <ComboBox ItemsSource="{Binding Path=dropDownOptions}" 
-                DisplayMemberPath="Name" 
-                SelectedValuePath="Name" 
-                SelectedValue="{Binding Path=PhonebookEntry}" Width="150" Height="20"/>
+                <ComboBox
+                        DisplayMemberPath="Name"
+                        SelectedValuePath="Name" 
+                        SelectedValue="Item1" Width="150" Height="20">
+
+                    <ComboBoxItem Name="Cons1" Content="Sox" />
+                    <ComboBoxItem Name="Cons2" Content="CO2" />
+                    <ComboBoxItem Name="Cons3" Content="Nox" />
+                    <ComboBoxItem Name="Cons4" Content="Particles" />
+                    <ComboBoxItem Name="Cons5" Content="Water" />                   
+                    </ComboBox>
             </Grid>
 
             <Grid Grid.Column="3" Margin="5 0 0 0" >
-                <ComboBox ItemsSource="{Binding Path=dropDownOptions}" 
-                DisplayMemberPath="Name" 
-                SelectedValuePath="Name" 
-                SelectedValue="{Binding Path=PhonebookEntry}" Width="150" Height="20"/>
+                <ComboBox
+                        DisplayMemberPath="Name"
+                        SelectedValuePath="Name" 
+                        SelectedValue="Item1" Width="150" Height="20">
+
+                    <ComboBoxItem Name="EType1" Content="Refrigerator" />
+                    <ComboBoxItem Name="EType2" Content="Bakery" />
+                    <ComboBoxItem Name="EType3" Content="Other" />                   
+                </ComboBox>
             </Grid>
 
             <Grid Grid.Column="4"  Margin="5 0 0 0">
-                <ComboBox ItemsSource="{Binding Path=dropDownOptions}" 
-                DisplayMemberPath="Name" 
-                SelectedValuePath="Name" 
-                SelectedValue="{Binding Path=PhonebookEntry}" Width="150" Height="20"/>
+                <ComboBox
+                        DisplayMemberPath="Name"
+                        SelectedValuePath="Name" 
+                        SelectedValue="Item1" Width="150" Height="20">
+
+                    <ComboBoxItem Name="day1" Content="Monday" />
+                    <ComboBoxItem Name="day2" Content="Tuesday" />
+                    <ComboBoxItem Name="day3" Content="Wednesday" />
+                    <ComboBoxItem Name="day4" Content="Thursday" />
+                    <ComboBoxItem Name="day5" Content="Friday" />
+                    <ComboBoxItem Name="day6" Content="Saturday" />
+                    <ComboBoxItem Name="day7" Content="Sunday" />
+                </ComboBox>
             </Grid>
         </Grid>
 

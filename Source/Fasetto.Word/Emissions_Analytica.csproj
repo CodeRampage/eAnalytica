@@ -82,7 +82,6 @@
     <Compile Include="ValueConverter\ApplicationPageValueConverter.cs" />
     <Compile Include="ValueConverter\BaseValueConverter.cs" />
     <Compile Include="ValueConverter\BooleanToVisibilityConverter.cs" />
-    <Compile Include="ValueConverter\DropDownOptions.cs" />
     <Compile Include="ViewModel\Base\BaseViewModel.cs" />
     <Compile Include="ViewModel\Base\RelayCommand.cs" />
     <Compile Include="ViewModel\WindowViewModel.cs" />
