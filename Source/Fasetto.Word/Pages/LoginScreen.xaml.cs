@@ -20,7 +20,6 @@ namespace Emissions_Analytica.Pages
     /// </summary>
     public partial class LoginScreen : Page
     {
-        DBHelper helper;
         public LoginScreen()
         {
             InitializeComponent();
@@ -31,15 +30,14 @@ namespace Emissions_Analytica.Pages
             string uid = txtUsername.Text;
             string pwd = txtPassword.Text;
 
-            helper = new DBHelper(uid, pwd);
-            if (helper.login())
+            DBHelper.init(uid, pwd);
+            if (DBHelper.login())
                 MessageBox.Show("Successful Login");
             else
             {
                 lblLoginStatus.Content = "Login Failed, check credentials";
                 lblLoginStatus.Visibility = Visibility.Visible;
-            }
-                
+            }                
         }
 
         private void hideErrorMessage(object sender, MouseEventArgs e)
