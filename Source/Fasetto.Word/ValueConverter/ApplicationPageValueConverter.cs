@@ -17,7 +17,7 @@ namespace Emissions_Analytica
             switch ((ApplicationPage)value)
             {
                 case ApplicationPage.Browser:
-                    return new WelcomePage();
+                    return new DataBrowser();
 
                 default:
                     Debugger.Break();
