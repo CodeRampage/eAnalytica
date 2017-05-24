@@ -67,6 +67,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataModels\ApplicationPage.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Emmission_Analytica_Data.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Emmission_Analytica_Data.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LoginScreen.xaml.cs">
       <DependentUpon>LoginScreen.xaml</DependentUpon>
     </Compile>
@@ -156,6 +162,17 @@
     <Resource Include="Fonts\Lato-SemiboldItalic.ttf" />
     <Resource Include="Fonts\Lato-Thin.ttf" />
     <Resource Include="Fonts\Lato-ThinItalic.ttf" />
+    <None Include="Emmission_Analytica_Data.xsc">
+      <DependentUpon>Emmission_Analytica_Data.xsd</DependentUpon>
+    </None>
+    <None Include="Emmission_Analytica_Data.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Emmission_Analytica_Data.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Emmission_Analytica_Data.xss">
+      <DependentUpon>Emmission_Analytica_Data.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
