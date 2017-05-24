@@ -25,7 +25,7 @@ namespace Emissions_Analytica
         {
             InitializeComponent();
 
-            this.DataContext = new WindowViewModel(this);
+            this.DataContext = new WindowViewModel(this);           
         }
         
     }
