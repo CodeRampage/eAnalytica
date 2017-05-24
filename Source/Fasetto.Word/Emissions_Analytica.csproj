@@ -82,6 +82,7 @@
     <Compile Include="ValueConverter\ApplicationPageValueConverter.cs" />
     <Compile Include="ValueConverter\BaseValueConverter.cs" />
     <Compile Include="ValueConverter\BooleanToVisibilityConverter.cs" />
+    <Compile Include="ValueConverter\DropDownOptions.cs" />
     <Compile Include="ViewModel\Base\BaseViewModel.cs" />
     <Compile Include="ViewModel\Base\RelayCommand.cs" />
     <Compile Include="ViewModel\WindowViewModel.cs" />
@@ -190,6 +191,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Logo\fake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo\BI Analytics.png" />
+    <Resource Include="Images\Logo\BI Analytics2.png" />
+    <Resource Include="Images\Logo\BlueDogsLogo.png" />
+    <Resource Include="Images\Logo\BlueDogsLogo2.png" />
+    <Resource Include="Images\Logo\Browser.png" />
+    <Resource Include="Images\Logo\Browser2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.1.29.2\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.2\build\dotnet\Fody.targets')" />
