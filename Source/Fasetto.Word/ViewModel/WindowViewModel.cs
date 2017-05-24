@@ -11,12 +11,13 @@ namespace Fasetto.Word
     /// </summary>
     public class WindowViewModel : BaseViewModel
     {
+        Window mWindow ;
         #region Private Member
 
         /// <summary>
         /// The window this view model controls
         /// </summary>
-        private Window mWindow;
+        //private Window mWindow;
 
         /// <summary>
         /// The margin around the window to allow for a drop shadow
@@ -153,7 +154,7 @@ namespace Fasetto.Word
         /// </summary>
         public WindowViewModel(Window window)
         {
-            mWindow = window;
+            this.mWindow = window;
 
             // Listen out for the window resizing
             mWindow.StateChanged += (sender, e) =>

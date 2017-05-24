@@ -1,5 +1,4 @@
-﻿using Emissions_Analytica;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,9 +20,36 @@ namespace Emissions_Analytica.Pages
     /// </summary>
     public partial class LoginScreen : Page
     {
+        DBHelper helper;
         public LoginScreen()
         {
             InitializeComponent();
-        }      
+        }
+
+        private void btnSignIn_Click(object sender, RoutedEventArgs e)
+        {
+            string uid = txtUsername.Text;
+            string pwd = txtPassword.Text;
+
+            helper = new DBHelper(uid, pwd);
+            if (helper.login())
+                MessageBox.Show("Successful Login");
+            else
+            {
+                lblLoginStatus.Content = "Login Failed, check credentials";
+                lblLoginStatus.Visibility = Visibility.Visible;
+            }
+                
+        }
+
+        private void hideErrorMessage(object sender, MouseEventArgs e)
+        {
+            ((TextBox)sender).Text = "";
+        }
+
+        private void hideErrorMessage(object sender, TextChangedEventArgs e)
+        {
+            lblLoginStatus.Visibility = Visibility.Hidden;
+        }
     }
 }
