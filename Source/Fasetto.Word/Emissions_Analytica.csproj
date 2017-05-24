@@ -72,6 +72,7 @@
     <Compile Include="Pages\DataBrowser.xaml.cs">
       <DependentUpon>DataBrowser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ValueConverter\DBHelper.cs" />
     <Compile Include="Pages\LoginScreen.xaml.cs">
       <DependentUpon>LoginScreen.xaml</DependentUpon>
     </Compile>
