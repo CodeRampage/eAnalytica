@@ -1,9 +1,8 @@
-# Fasetto Word
-The new open-source chat application for Fasetto
+# eAnalytica
+A dataware housing project for analysing emission factors.
 
 # Gettings Started
-I will be making videos available on my YouTube channel that will be guides to everything contained in this repository
-
+UI completed using this channel:
 http://www.angelsix.com/youtube
 
 
